@@ -18,6 +18,9 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'materialize-sass', '~> 1.0'
 gem 'material_icons' 
+gem "figaro"
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 
 # Use CoffeeScript for .coffee assets and views

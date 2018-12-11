@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FrogForum</title>
+    <title>Together Run</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,20 @@
   </head>
 
   <body>
+
+  <div class="navbar-fixed">
+    <nav class="deep-purple lighten-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <%= link_to "Together Run", root_path, class: "brand-logo"%>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
     <div class="container">
       <%= yield %>
     </div>
