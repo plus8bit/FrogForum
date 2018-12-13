@@ -1,5 +1,7 @@
 class User < ApplicationRecord
 
+  has_many :discussions
+
   def self.create_or_update(auth_info)
     user = where(uid: auth_info[:uid], provider: auth_info[:provider]).first_or_create
     user.update(
