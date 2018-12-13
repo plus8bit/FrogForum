@@ -16,4 +16,8 @@ class User < ApplicationRecord
     )
     user
   end
+
+  def owns_discussion?(discussion)
+    id = discussion.user_id
+  end
 end
